@@ -1,0 +1,65 @@
+[
+  {
+    "nombre": "dispositivo 1",
+    "serial": "12323",
+    "fechaCompra": "2025-06-03",
+    "ubicacion": "patio",
+    "usuario": "1749328885720"
+  },
+  {
+    "nombre": "dispositivo 2",
+    "serial": "12312312",
+    "fechaCompra": "2025-06-03",
+    "ubicacion": "sala",
+    "usuario": "1749328885720"
+  },
+  {
+    "nombre": "dispositivo 1",
+    "serial": "098765",
+    "fechaCompra": "2025-06-11",
+    "ubicacion": "bogota",
+    "usuario": "1749584384993"
+  },
+  {
+    "nombre": "Dispositivo 10",
+    "serial": "91238012",
+    "fechaCompra": "2025-06-02",
+    "ubicacion": "sala",
+    "usuario": "1749584384993"
+  },
+  {
+    "nombre": "dispositivo 5",
+    "serial": "012930",
+    "fechaCompra": "2025-06-02",
+    "ubicacion": "bogotaa",
+    "usuario": "1749584384993"
+  },
+  {
+    "nombre": "Dispositivo 1",
+    "serial": "020870",
+    "fechaCompra": "2525-05-20",
+    "ubicacion": "Patio",
+    "usuario": "1749611824340"
+  },
+  {
+    "nombre": "Dispositivo 2",
+    "serial": "159364",
+    "fechaCompra": "2025-06-19",
+    "ubicacion": "Sala",
+    "usuario": "1749611824340"
+  },
+  {
+    "nombre": "Dispositivo 3",
+    "serial": "147896",
+    "fechaCompra": "2025-06-08",
+    "ubicacion": "Comedor",
+    "usuario": "1749611824340"
+  },
+  {
+    "nombre": "Dispositivo 1",
+    "serial": "456789",
+    "fechaCompra": "2025-06-04",
+    "ubicacion": "Sala",
+    "usuario": "1748996377576"
+  }
+]

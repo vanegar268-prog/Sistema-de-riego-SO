@@ -1,31 +1,12 @@
-body{
-    font-family: 'Poppins', sans-serif;
+body {
     padding: 50px;
     background: linear-gradient(#637256 49%, #bbd8a3 87%); 
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    justify-items: center;
 }
 
-header {
-    background-color: rgba(171, 201, 170, 0.336);
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 80px;
-    height: 80px;
-}
-h1{
+h1, h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     color: white;
     text-shadow: -2px -2px 0 #00000030,  
@@ -34,87 +15,78 @@ h1{
                   2px  2px 0 #00000030;
 }
 
-.navbar h1 {
-    font-size: 1.5em;
-    font-weight: 600;
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgba(171, 201, 170, 0.336);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    margin: 40px 10%;
-}
-
-.contenido {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.seccion-info {
-    background-color: #fafff976;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.seccion-info:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.seccion-info h2 {
-    font-size: 1.25em;
-    color: #0c3d0e;
-    margin-bottom: 10px;
-}
-
-.seccion-info p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.seccion-info ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-
-
-.seccion-info li::before {
-    margin-right: 10px;
-    color: #4CAF50;
-}
-
-footer {
-    background-color: #4CAF50;
+input, button {
     color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 40px;
+  background-color: #8a5d338c;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #8a5d338c;
+  box-sizing: border-box;
+}
+::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+input:focus {
+    background: #637256;
+  outline: none;
 }
 
 button {
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     text-align: center;
     color: white;
     text-shadow: -2px -2px 0 #00000030,  
                   2px -2px 0 #00000030,
                  -2px  2px 0 #00000030,
                   2px  2px 0 #00000030;
+    width: 70%;
+    size: auto;
     background: #637256;
     color: white;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
-    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #637256;
 }
 
-button:hover{
-    background: white;
-    color: #637256;
+button:hover {
+  background-color: #ffffff;
+  color: #637256;
 }
 
+ul#lista-dispositivos {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul#lista-dispositivos li {
+  background-color: #c4cec7a2;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
 
 
 .chat-toggle-button {

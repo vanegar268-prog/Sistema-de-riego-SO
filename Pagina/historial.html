@@ -7,56 +7,19 @@
 </head>
 <body>
   <div class="contenedor-historial">
-  <h2>Historial de Humedad</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Fecha</th>
-        <th>Hora</th>
-        <th>Humedad</th>
-      </tr>
-    </thead>
-    <tbody id="tabla-historial"></tbody>
-  </table>
-</div>
-
-  <script>
-    const userId = localStorage.getItem("id");
-    const mensaje = document.getElementById("mensaje");
-    const tabla = document.getElementById("tabla-historial");
-
-    console.log("ID cargado desde localStorage:", userId);
-
-    if (!userId) {
-      mensaje.textContent = "No se ha encontrado un ID de usuario. Por favor, inicia sesión o regístrate.";
-    } else {
-      fetch(`/obtener-historial/${userId}`)
-        .then(res => {
-          if (!res.ok) {
-            throw new Error("Error al obtener historial del servidor");
-          }
-          return res.json();
-        })
-        .then(data => {
-          if (data.length === 0) {
-            mensaje.textContent = "No hay registros de humedad para este usuario.";
-          } else {
-            data.forEach(d => {
-              const fila = `<tr>
-                <td>${d.fecha}</td>
-                <td>${d.hora}</td>
-                <td>${d.valor}%</td>
-              </tr>`;
-              tabla.innerHTML += fila;
-            });
-          }
-        })
-        .catch(error => {
-          console.error("Error al cargar historial:", error);
-          mensaje.textContent = "No se pudo cargar el historial. Intenta más tarde.";
-        });
-    }
-  </script>
+    <h2>HISTORIAL DE HUMEDAD</h2>
+    <p id="mensaje"></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Humedad</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-historial"></tbody>
+    </table>
+  </div>
+  <script src="js/historial.js"></script>
 </body>
 </html>

@@ -6,19 +6,19 @@
   <link rel="stylesheet" href="css/sistemaDeRiego.css">
 </head>
 <body>
-  <a href="index.html">
+  <a href="RegistroDispositivos.html">
     <img src="img/Logo.png" alt="Logo" class="100">
   </a>
   
   <div class="card">
-    <h1>Lectura de Humedad</h1>
+    <h1>LECTURA DE HUMEDAD</h1>
     <div class="humedad" id="humedad">--%</div>
     <div class="estado" id="estado">Sin conexión</div>
     <button onclick="conectar()"><h2>Conectar Arduino</h2></button>
   </div>
 
   <div class="historial">
-    <h1>Historial de Lecturas</h1>
+    <h1>HISTORIAL DE LECTURAS</h1>
     <table>
       <thead>
         <tr>
@@ -33,7 +33,7 @@
   </div>
 
   <div class="button">
-    <a href="historial.html">Ver Historial</a>
+    <button onclick="window.location.href='historial.html'"><h2>VER HISTORIAL</h2></button>
   </div>
 
   <button class="chat-toggle-button" onclick="toggleChatbot()">&#x1F916;</button>

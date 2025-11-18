@@ -17,7 +17,9 @@ document.getElementById("formularioLogin").addEventListener("submit", async func
       resultado.textContent = `Bienvenido, ${encontrado.nombre}`;
       resultado.style.color = "green";
 
+      // ✅ Guardamos el ID correctamente
       localStorage.setItem("id", encontrado.id);
+      localStorage.setItem("nombre", encontrado.nombre);
 
       setTimeout(() => {
         window.location.href = "menu.html";

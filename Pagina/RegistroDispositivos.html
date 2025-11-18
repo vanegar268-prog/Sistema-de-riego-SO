@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Dispositivos</title>
+  <link rel="stylesheet" href="css/registrodispositivo.css" />
+</head>
+<body>
+<center>
+  <a href="menu.html">
+    <img src="img/Logo.png" width="100" height="100">
+  </a>
+</center>
+
+  <h1>REGISTRO DE DISPOSITIVOS</h1>
+
+  <form id="form-registro">
+    <input type="text" id="nombre" placeholder="Nombre del dispositivo" required />
+    <input type="text" id="serial" placeholder="Serial del dispositivo" required />
+    <input type="date" id="fechaCompra" required />
+    <input type="text" id="ubicacion" placeholder="Ubicación" required />
+    <button type="submit"><h3>REGISTAR DISPOSITIVO</h3></button>
+  </form>
+
+  <h2>MIS DISPOSITIVOS</h2>
+  <ul id="lista-dispositivos"></ul>
+
+  <button class="chat-toggle-button" onclick="toggleChatbot()">🤖</button>
+
+    <div class="chatbot-container" id="chatbot" style="display: none;">
+        <div class="chatbox" id="chat-box">
+            <div class="bot-message">Hola, soy tu asistente virtual acerca de sistema de riego automático. ¿En qué puedo ayudarte?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta..."/>
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+  <script src="js/registroDispositivos.js"></script>
+</body>
+</html>

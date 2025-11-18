@@ -127,5 +127,21 @@
     "telefono": "12312312312",
     "password": "andres123",
     "fecha": "7/6/2025, 3:41:25 p. m."
+  },
+  {
+    "id": 1749584384993,
+    "nombre": "vanessa",
+    "email": "vanessa@gmail.com",
+    "telefono": "1231231231",
+    "password": "vanessa1234",
+    "fecha": "10/6/2025, 2:39:44 p. m."
+  },
+  {
+    "id": 1749611824340,
+    "nombre": "Luis Pulido",
+    "email": "lp256@h6otmail.com",
+    "telefono": "3124597869",
+    "password": "pruebas123",
+    "fecha": "10/6/2025, 10:17:04 p.m."
   }
 ]

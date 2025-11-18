@@ -33,15 +33,19 @@ async function conectar() {
           tabla.appendChild(fila);
 
           const userId = localStorage.getItem("id");
-          if (userId) {
+          const serial = localStorage.getItem("dispositivo_actual");
+
+          if (userId && serial) {
             fetch('/guardar-humedad', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ userId, valor: porcentaje })
+              body: JSON.stringify({ userId, serial, valor: porcentaje })
             })
             .then(res => res.json())
             .then(data => console.log("Guardado en historial:", data.mensaje))
             .catch(err => console.error("Error al guardar humedad:", err));
+          } else {
+            console.warn("Falta userId o serial para guardar humedad.");
           }
         }
       }
@@ -51,6 +55,7 @@ async function conectar() {
     document.getElementById("estado").textContent = "Error: No se conectó ningún dispositivo";
   }
 }
+
 
 function toggleChatbot() {
   const chatbot = document.getElementById('chatbot');
