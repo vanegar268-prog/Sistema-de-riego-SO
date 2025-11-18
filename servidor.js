@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const PUERTO = 3000;
+const PUERTO = process.env.PORT || 3000;
 const CARPETA_PUBLIC = path.join(__dirname, "Pagina");
 const RUTA_JSON = path.join(__dirname, "usuarios.json");
 const RUTA_TXT = path.join(__dirname, "usuarios.txt");
